@@ -1,4 +1,8 @@
-﻿namespace N_Tier.Application.Models;
+﻿using N_Tier.Application.Models.Exam;
+using N_Tier.Application.Models.Grades;
+using N_Tier.Application.Models.Lesson;
+
+namespace N_Tier.Application.Models;
 
 public class ApiResult<T>
 {
@@ -26,4 +30,19 @@ public class ApiResult<T>
     {
         return new ApiResult<T>(false, default, errors);
     }
+
+	public static object? Success(UpdateExamResponseModel updateExamResponseModel)
+	{
+		throw new NotImplementedException();
+	}
+
+	public static object? Success(UpdateGradeResponseModel updateGradeResponseModel)
+	{
+		throw new NotImplementedException();
+	}
+
+	public static object? Success(UpdateLessonResponseModel updateLessonResponseModel)
+	{
+		throw new NotImplementedException();
+	}
 }
